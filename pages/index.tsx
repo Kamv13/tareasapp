@@ -10,7 +10,7 @@ export default function Home() {
  return (
     <TasksProvider>
       <div className="container mt-5">
-        <h1 className="text-center mb-4">Task Manager</h1>
+        <h1 className="text-center mb-4">Administrador de Tareas</h1>
         <TaskInput />
         <TaskList />
       </div>
