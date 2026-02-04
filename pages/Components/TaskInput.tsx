@@ -17,7 +17,7 @@ export default function TaskInput() {
       <input
         type="text"
         className="form-control"
-        placeholder="Enter a task..."
+        placeholder="Introduzca una tarea"
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />
