@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TasksProvider } from "../Context/taskContext";
-import TaskInput from "../Components/TaskInput";
-import TaskList from "../Components/TaskList";
-
+import { TasksProvider } from "./Context/taskContext";
+import TaskInput from "./Components/TaskInput";
+import TaskList from "./Components/TaskList";
 
 
 
