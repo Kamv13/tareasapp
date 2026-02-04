@@ -1,22 +1,21 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { TasksProvider } from "../Context/taskContext";
+import TaskInput from "../Components/TaskInput";
+import TaskList from "../Components/TaskList";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 export default function Home() {
-  return (
-    <>
-      
-    </>
+ return (
+    <TasksProvider>
+      <div className="container mt-5">
+        <h1 className="text-center mb-4">Task Manager</h1>
+        <TaskInput />
+        <TaskList />
+      </div>
+    </TasksProvider>
   );
+
 }

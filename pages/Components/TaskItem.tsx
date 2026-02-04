@@ -53,7 +53,7 @@ export default function TaskItem({ task, index }: TaskItemProps) {
             </button>
             <button
               className="btn btn-danger btn-sm"
-              onClick={() => context && context.deleteTask(index)} // ✅ fixed
+              onClick={() => context && context.deleteTask(index)} 
             >
               Delete
             </button>
