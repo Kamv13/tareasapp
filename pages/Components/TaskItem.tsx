@@ -32,13 +32,13 @@ export default function TaskItem({ task, index }: TaskItemProps) {
             className="btn btn-success btn-sm me-2"
             onClick={handleSaveEditClick}
           >
-            Save
+            Guardar
           </button>
           <button
             className="btn btn-secondary btn-sm"
             onClick={() => setIsEditing(false)}
           >
-            Cancel
+              
           </button>
         </div>
       ) : (
@@ -49,13 +49,13 @@ export default function TaskItem({ task, index }: TaskItemProps) {
               className="btn btn-warning btn-sm me-2"
               onClick={() => setIsEditing(true)}
             >
-              Edit
+              Editar
             </button>
             <button
               className="btn btn-danger btn-sm"
               onClick={() => context && context.deleteTask(index)} 
             >
-              Delete
+              Eliminar
             </button>
           </div>
         </>
